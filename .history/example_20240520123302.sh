@@ -1,13 +1,13 @@
 #download submodule
 git submodule update --init --recursive
 
-#compile
-mkdir build
-cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_CUDA=ON
-make -j8
-export PYTHONPATH=$PYTHONPATH:$(pwd)
-cd ..
+# #compile
+# mkdir build
+# cd build
+# cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_CUDA=ON
+# make -j8
+# export PYTHONPATH=$PYTHONPATH:$(pwd)
+# cd ..
 
 #prepare data
 # mkdir data

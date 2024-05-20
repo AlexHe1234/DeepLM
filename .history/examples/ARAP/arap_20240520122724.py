@@ -13,7 +13,6 @@ parser.add_argument('--device', default='cuda') #cpu/cuda
 args = parser.parse_args()
 
 V, F = LoadOBJ(args.inputFile)
-breakpoint()
 vc = np.mean(V, axis=0)
 for i in range(3):
 	V[:,i] -= vc[i]
